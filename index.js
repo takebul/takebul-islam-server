@@ -447,6 +447,26 @@ app.patch("/messages/:id/read", verifyAdmin, async (req, res) => {
   }
 });
 
+// DELETE /messages/:id - Delete contact message (Admin Only)
+app.delete("/messages/:id", verifyAdmin, async (req, res) => {
+  try {
+    const { id } = req.params;
+    const result = await messagesCollection.deleteOne(idFilter(id));
+
+    if (result.deletedCount === 0) {
+      return res.status(404).json({ success: false, message: "Message not found" });
+    }
+
+    res.json({
+      success: true,
+      message: "Message deleted successfully"
+    });
+  } catch (error) {
+    console.error("Error deleting message:", error);
+    res.status(500).json({ success: false, message: "Failed to delete message" });
+  }
+});
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
