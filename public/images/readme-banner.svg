@@ -1,0 +1,142 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030712" />
+      <stop offset="50%" stop-color="#0b1329" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <!-- Radial Glows -->
+    <radialGradient id="cyanGlow" cx="25%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.25" />
+      <stop offset="60%" stop-color="#06b6d4" stop-opacity="0.03" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="indigoGlow" cx="80%" cy="70%" r="50%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.22" />
+      <stop offset="70%" stop-color="#6366f1" stop-opacity="0.02" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Logo Gradients -->
+    <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="50%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+
+    <!-- Text Gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+
+    <!-- Border Gradients -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.4" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" />
+    </pattern>
+
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#06b6d4" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Base Canvas -->
+  <rect width="1200" height="360" rx="24" fill="url(#bgGrad)" />
+  <rect width="1200" height="360" rx="24" fill="url(#grid)" />
+  <rect width="1200" height="360" rx="24" fill="url(#cyanGlow)" />
+  <rect width="1200" height="360" rx="24" fill="url(#indigoGlow)" />
+  <rect x="1" y="1" width="1198" height="358" rx="23" fill="none" stroke="url(#borderGrad)" stroke-width="2" />
+
+  <!-- Cyber Corner Brackets -->
+  <path d="M 16 36 L 16 16 L 36 16" fill="none" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M 1184 36 L 1184 16 L 1164 16" fill="none" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M 16 324 L 16 344 L 36 344" fill="none" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round" />
+  <path d="M 1184 324 L 1184 344 L 1164 344" fill="none" stroke="#22d3ee" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Status Beacon Badge (Top Left) -->
+  <g transform="translate(64, 42)">
+    <rect width="280" height="32" rx="16" fill="rgba(6, 182, 212, 0.12)" stroke="rgba(6, 182, 212, 0.35)" stroke-width="1" />
+    <circle cx="18" cy="16" r="5" fill="#10b981" />
+    <circle cx="18" cy="16" r="9" fill="#10b981" fill-opacity="0.3" />
+    <text x="34" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#22d3ee" letter-spacing="1">AVAILABLE FOR FULL-STACK ROLES</text>
+  </g>
+
+  <!-- Left: Monogram Icon Box (10-Years Senior Brand Identity Standard) -->
+  <g transform="translate(64, 95)" filter="url(#dropShadow)">
+    <rect width="120" height="120" rx="28" fill="#0f172a" stroke="url(#borderGrad)" stroke-width="2" />
+    <rect width="120" height="120" rx="28" fill="url(#cyanGlow)" />
+
+    <!-- Interlocking T & I Monogram -->
+    <!-- T Crossbar -->
+    <path d="M 28 36 L 92 36 L 92 48 L 68 48 L 68 84 L 52 84 L 52 48 L 28 48 Z" fill="url(#logoGrad)" />
+    <!-- 45-degree Code Slash Accent -->
+    <path d="M 72 44 L 84 32 L 88 36 L 76 48 Z" fill="#38bdf8" />
+    <!-- Floating Terminal Diamond Node -->
+    <polygon points="60,20 66,26 60,32 54,26" fill="#38bdf8" />
+  </g>
+
+  <!-- Main Headline Block -->
+  <g transform="translate(210, 115)">
+    <!-- Terminal Monospace Prefix -->
+    <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="14" font-weight="600" fill="#94a3b8">
+      <tspan fill="#06b6d4">const</tspan> developer = <tspan fill="#f59e0b">"Takebul Islam"</tspan>;
+    </text>
+
+    <!-- Primary Name Heading -->
+    <text x="0" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="46" font-weight="900" fill="#ffffff" letter-spacing="-1">
+      Takebul Islam
+    </text>
+
+    <!-- Gradient Sub-headline -->
+    <text x="0" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700" fill="url(#textGrad)" letter-spacing="0.5">
+      Full-Stack Web Developer • Next.js &amp; MERN Architecture
+    </text>
+
+    <!-- Clean Tech Scope -->
+    <text x="0" y="110" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#94a3b8">
+      Production Full-Stack SaaS • Two-Sided Marketplaces • REST APIs • Stripe • Better Auth • 60fps Kinetic UI
+    </text>
+  </g>
+
+  <!-- Bottom Metric Bar (4 Luxury Badges) -->
+  <g transform="translate(64, 275)">
+    <!-- Badge 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="240" height="46" rx="14" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+      <text x="20" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="900" fill="#06b6d4">7+</text>
+      <text x="54" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#cbd5e1">Projects Shipped</text>
+    </g>
+
+    <!-- Badge 2 -->
+    <g transform="translate(260, 0)">
+      <rect width="240" height="46" rx="14" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+      <text x="20" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="900" fill="#3b82f6">12+</text>
+      <text x="64" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#cbd5e1">Modern Tech Stack</text>
+    </g>
+
+    <!-- Badge 3 -->
+    <g transform="translate(520, 0)">
+      <rect width="240" height="46" rx="14" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+      <text x="20" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="900" fill="#10b981">100%</text>
+      <text x="80" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#cbd5e1">Commitment to Quality</text>
+    </g>
+
+    <!-- Badge 4 -->
+    <g transform="translate(780, 0)">
+      <rect width="290" height="46" rx="14" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+      <text x="20" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="18" font-weight="900" fill="#f59e0b">&lt; 24h</text>
+      <text x="82" y="28" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="600" fill="#cbd5e1">Fast Turnaround &amp; Response</text>
+    </g>
+  </g>
+</svg>
