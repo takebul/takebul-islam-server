@@ -101,7 +101,7 @@ Here are three full-stack production platforms showcasing architectural versatil
 
 * **Live Platform:** [tutor-booking-client.vercel.app](https://tutor-booking-client.vercel.app)
 * **Client Codebase:** [github.com/takebul/tutor-booking-client](https://github.com/takebul/tutor-booking-client)
-* **Server Codebase:** [github.com/takebul/tutor-booking-client](https://github.com/takebul/tutor-booking-client)
+* **Server Codebase:** [github.com/takebul/tutor-booking-server](https://github.com/takebul/tutor-booking-server)
 * **Core Tech Stack:** Next.js, React, Node.js, Express.js, MongoDB Atlas, Better Auth, Remote JWKS, Swiper.js, Tailwind CSS.
 
 #### Key Architectural & Technical Highlights:
