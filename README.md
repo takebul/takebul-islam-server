@@ -8,7 +8,7 @@
 
   <!-- Status & Tech Badges -->
   <p align="center">
-    <a href="https://takebulislam.dev">
+    <a href="https://takebulislam.vercel.app">
       <img src="https://img.shields.io/badge/Status-Available%20for%20Hire%20%2F%20Contracts-06b6d4?style=for-the-badge&logo=statuspage&logoColor=white" alt="Hiring Status" />
     </a>
     <a href="https://nextjs.org">
